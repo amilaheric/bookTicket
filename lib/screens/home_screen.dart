@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutterappnew/screens/ticket_view.dart';
 import 'package:flutterappnew/utilis/app_styles.dart';
 import 'package:gap/gap.dart';
 
@@ -68,10 +69,31 @@ class HomeScreen extends StatelessWidget {
                       )
                     ],
                   ),
+                ),
+                const Gap(40),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    InkWell(
+                      onTap: () {
+                        print('tapped');
+                      },
+                      child: Text(
+                        "Upcoming Flights",
+                        style: Styles.headLineStyle,
+                      ),
+                    ),
+                    Text(
+                      "View all",
+                      style: Styles.headLineStyle4,
+                    )
+                  ],
                 )
               ],
             ),
-          )
+          ),
+          const Gap(15),
+          const TicketView()
         ],
       ),
     );
