@@ -2,13 +2,13 @@ import 'package:flutter/animation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-Color primary = const Color(0xFF687daf);
+Color primary = Color.fromARGB(255, 18, 66, 137);
 
 class Styles {
   static Color primaryColor = primary;
   static Color textColor = const Color(0xFF3b3b3b);
   static Color bgColor = const Color(0xFFeeedf2);
-  static Color orangeColor = const Color(0xFF526799);
+  static Color cikColor = Color.fromARGB(255, 96, 162, 223);
   static TextStyle textStyle =
       TextStyle(fontSize: 16, color: textColor, fontWeight: FontWeight.w500);
   static TextStyle headLineStyle =
